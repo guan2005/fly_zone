@@ -8,9 +8,9 @@ public class IndexController {
 
     @GetMapping("/")
     public String hello(){
-        return "/index";
+        return "index";
     }
-    @GetMapping("/user/reg.html")
+    @GetMapping("/user/reg")
     public String reg(){
         return "/user/reg";
     }
