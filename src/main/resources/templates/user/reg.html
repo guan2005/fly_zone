@@ -35,10 +35,10 @@
         <a class="iconfont icon-touxiang layui-hide-xs" href="user/login.html"></a>
       </li>
       <li class="layui-nav-item">
-        <a href="user/login.html">登入</a>
+        <a th:href="@{/login}">登入</a>
       </li>
       <li class="layui-nav-item">
-        <a href="user/reg.html">注册</a>
+        <a th:href="@{/reg}">注册</a>
       </li>
       <li class="layui-nav-item layui-hide-xs">
         <a href="/app/qq/" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})" title="QQ登入" class="iconfont icon-qq"></a>
@@ -54,13 +54,13 @@
   <div class="fly-panel fly-panel-user" pad20>
     <div class="layui-tab layui-tab-brief" lay-filter="user">
       <ul class="layui-tab-title">
-        <li><a href="login.html">登入</a></li>
+        <li><a th:href="@{/login}">登入</a></li>
         <li class="layui-this">注册</li>
       </ul>
       <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">
         <div class="layui-tab-item layui-show">
           <div class="layui-form layui-form-pane">
-            <form method="post" th:action="@{/reg}" >
+            <form action="#" th:action="@{/add}" method="post" >
               <div class="layui-form-item">
                 <label for="L_email" class="layui-form-label">邮箱</label>
                 <div class="layui-input-inline">
